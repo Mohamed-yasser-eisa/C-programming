@@ -40,3 +40,46 @@
 1651028769 e:\my_projects\c_programming\projects\hospital_management_system\hospital_structs.h
 	"stdTypedef.h"
 
+1651079808 source:e:\my_github_files\c\c-programming\projects\hospital_management_system\database.c
+	"database.h"
+
+1651079808 e:\my_github_files\c\c-programming\projects\hospital_management_system\database.h
+	<stdio.h>
+	"stdTypedef.h"
+	"hospital_structs.h"
+
+1651013669 e:\my_github_files\c\c-programming\projects\hospital_management_system\stdtypedef.h
+
+1651071008 e:\my_github_files\c\c-programming\projects\hospital_management_system\hospital_structs.h
+	"stdTypedef.h"
+
+1651030569 source:e:\my_github_files\c\c-programming\projects\hospital_management_system\local_system.c
+	"local_system.h"
+
+1651030569 e:\my_github_files\c\c-programming\projects\hospital_management_system\local_system.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"stdTypedef.h"
+
+1651080038 source:e:\my_github_files\c\c-programming\projects\hospital_management_system\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"local_system.h"
+	"stdTypedef.h"
+
+1651079941 source:e:\my_github_files\c\c-programming\projects\hospital_management_system\doctor.c
+	"doctor.h"
+
+1651077009 e:\my_github_files\c\c-programming\projects\hospital_management_system\doctor.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<time.h>
+	"stdTypedef.h"
+	"hospital_structs.h"
+	"database.h"
+	"local_system.h"
+

@@ -29,13 +29,13 @@ int main()
         puts("\n====================\tWelcome to Egypt hospital\t====================");
         puts("____________________________________________________________________________\n\n");
         puts("Please select from the following options:");
-        puts("-----------------------------------------\n");
+        puts("-----------------------------------------");
         puts("(1) I'm a doctor.");
         puts("(2) I'm a nurse.");
         puts("(3) I'm a patient.");
         puts("(4) View informations.");
         puts("(5) Change theme.");
-        puts("(6) Exit.\n");
+        puts("(6) Exit.");
         puts("------------------------------------------");
 
         fflush(stdin);
@@ -49,6 +49,22 @@ int main()
                 if(1 == select)
                 {
                     //doctor in the hospital
+                    uint8 result = 4;
+                    result = doctor_check_id();
+                    if(0 == result)
+                    {
+                        puts("doctor is not founded");
+                    }
+                    else if(1 == result)
+                    {
+                        puts("Welcome Dr.");
+                        fflush(stdin);
+                        getch();
+                    }
+                    else if(0xff == result)
+                    {
+                        puts("doctor.pdf is not founded");
+                    }
                 }
                 else if(2 == select)
                 {

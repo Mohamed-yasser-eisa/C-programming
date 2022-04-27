@@ -25,3 +25,39 @@
 	Phone: 36524,
 	Salary: 100253.630
 }
+{
+	Name: "Adel Adel",
+	Gender: "male",
+	Specialization: "Biomedical engineer",
+	National id: 123456,
+	Hospital id: 251658240,
+	Phone: 654321,
+	Salary: 12000.365
+}
+{
+	Name: "mahmoud ali",
+	Gender: "male",
+	Specialization: "engineer",
+	National id: 888,
+	Hospital id: 335544320,
+	Phone: 777,
+	Salary: 56423.654
+}
+{
+	Name: "ali mo",
+	Gender: "male",
+	Specialization: "dr",
+	National id: 111,
+	Hospital id: 385875968,
+	Phone: 222,
+	Salary: 33.600
+}
+{
+	Name: "menna yasser",
+	Gender: "female",
+	Specialization: "engineer",
+	National id: 456,
+	Hospital id: 486539264,
+	Phone: 66554,
+	Salary: 56456.000
+}
