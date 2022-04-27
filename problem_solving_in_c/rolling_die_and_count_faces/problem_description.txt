@@ -1,0 +1,6 @@
+
+write a C program does the following:
+
+1- create a random die rolling function.
+
+2- roll die 6,000,000 times and count each face frequency.

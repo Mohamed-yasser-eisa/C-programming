@@ -1,0 +1,51 @@
+What is (structure padding)?
+
+    structure padding means that the compiler reseves empty memory locations (bytes) between struct members,
+    to make the execution speed more faster.
+
+Why compiler make structure padding?
+
+    * to make read/write process in memory more fast.
+    * to make each member of the struct stored in one word-line.
+
+Why is there a structure padding?
+
+    Because when microprocessor read/write data from/to memory it does not read/write byte by byte.
+    It reads/writes "word by word" or "word-line". So compiler tries to do some optimization on memory to make
+    each member be read/written in one word-line, so the read/write operation is performed in one clock cycle.
+    This optimization makes execution time mare faster, but it some times takes more memory to store data which
+    need less memory locations.
+
+What is the output from structure padding?
+
+    * Each struct member is stored in one word-line is possible.
+    * Each struct member can be read/written in one clock cycle.
+    * Adderass of each struct member is divisable by its size.
+    * The address of the next structure must be divisable by its first memebr's size.
+
+Can you control strcuture padding? and how?
+
+    yes, using ( #pragma pack(n) ).
+    where (n) is the alinment of the compiler (1 bit, 16 bit, 32 bit, 64 bit, ...). 
+    (n) must be a number resulting from 2 to the power of a number. i.e: n = 1,2,4,8,16,32,64,128,256,512,1024,...
+
+What will this statement: (#pragma pack(4) ) do?
+
+    * It will make alignment of compiler = 4 bytes.
+    * It tells the compiler that the word-line = 4 bytes.
+    * "Compiler will not do padding to make address of struct member is divisable by its size".
+
+What will this statement: (#pragma pack(2) ) do?
+
+    * It will reduce structure padding. 
+    * It tells the compiler that each word-line = 2 bytes.
+    * In this case, the structure padding only happens when a member of type char is followed 
+      by member of type > char.
+    * In this case the struct padding if happened, it will be only 1 byte between some struct members.
+
+What will this statement: (#pragma pack(1) ) do?
+
+    * It will prevent any structure padding.
+    * In this case compiler will understand that word-line = 1 byte.
+    * In this case the size of struct = sum sizes of all struct members.
+    * No unused memory locations will be left empty between struct members.

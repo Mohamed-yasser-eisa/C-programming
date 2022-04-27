@@ -1,0 +1,27 @@
+{
+	Name: "Mohamed Yasser",
+	Gender: "male",
+	Specialization: "Biomedical engineer",
+	National id: 12345678912345,
+	Hospital id: 285212672,
+	Phone: 1234567891,
+	Salary: 10000.563
+}
+{
+	Name: "Ali Mohamed",
+	Gender: "male",
+	Specialization: "engineer",
+	National id: 4569987,
+	Hospital id: 570425344,
+	Phone: 36524,
+	Salary: 1256.590
+}
+{
+	Name: "omar Ibrahim",
+	Gender: "male",
+	Specialization: "engineer",
+	National id: 1256643,
+	Hospital id: 520093696,
+	Phone: 36524,
+	Salary: 100253.630
+}
