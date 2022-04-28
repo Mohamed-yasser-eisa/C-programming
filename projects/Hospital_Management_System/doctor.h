@@ -28,10 +28,21 @@ if returned '0xff' doctor.pdf not founded
 */
 uint8 doctor_check_id(void);
 
-
-
+/*
+function prints doctor's data from database.
+*/
 void doctor_view_data(DOCTOR* Vdata);
+
+/*
+function reads input data from screen and add it to database
+*/
 void doctor_add_new(void);
+
+/*
+function welcome doctor and prints options on screen for him.
+it returns number of selected option
+*/
+void doctor_welcome_screen(uint8* option);
 
 
 

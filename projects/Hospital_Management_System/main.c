@@ -30,11 +30,11 @@ int main()
         puts("____________________________________________________________________________\n\n");
         puts("Please select from the following options:");
         puts("-----------------------------------------");
-        puts("(1) I'm a doctor.");
-        puts("(2) I'm a nurse.");
-        puts("(3) I'm a patient.");
-        puts("(4) View informations.");
-        puts("(5) Change theme.");
+        puts("(1) I'm a doctor.\n");
+        puts("(2) I'm a nurse.\n");
+        puts("(3) I'm a patient.\n");
+        puts("(4) View informations.\n");
+        puts("(5) Change theme.\n");
         puts("(6) Exit.");
         puts("------------------------------------------");
 
@@ -53,19 +53,31 @@ int main()
                     result = doctor_check_id();
                     if(0 == result)
                     {
-                        puts("doctor is not founded");
+                        system("cls");
+                        puts("Your \"Hospital Id\" is not in the database!");
+                        puts("Please make sure you enter your \"Hospital Id\" correctly.");
                     }
-                    else if(1 == result)
+                    else if(1 == result) //doctor is founded
                     {
-                        puts("Welcome Dr.");
+                        doctor_welcome_screen(&select);
+                        if(1 == select)
+                        {
+                            //follow up with a patient
+                        }
+                        else if(2 == select)
+                        {
+                            //view today's cases
+                        }
                         fflush(stdin);
                         getch();
                     }
                     else if(0xff == result)
                     {
                         puts("doctor.pdf is not founded");
+                        fflush(stdin);
+                        getch();
                     }
-                }
+                }//end of if(1 == select);
                 else if(2 == select)
                 {
                     //new doctor
@@ -76,7 +88,14 @@ int main()
                 //
                 break;
             case 3:
-                //
+                //I'm a patient
+                //patient welcome screen
+                patient_welcome_screen(&select);
+                if(0 == patient_selection(&select))
+                {
+                    //wrong choice
+                    break;
+                }
                 break;
             case 4:
                 /*background color*/

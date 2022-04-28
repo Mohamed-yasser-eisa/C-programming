@@ -61,3 +61,13 @@
 	Phone: 66554,
 	Salary: 56456.000
 }
+{
+	Name: "Mohamed Samir",
+	Gender: "male",
+	Specialization: "dentist",
+	National id: 456,
+	Hospital id: 112105744,
+	Phone: 123,
+	Salary: 10000.500
+	consultancy fees: 100.000
+}

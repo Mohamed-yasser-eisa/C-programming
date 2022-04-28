@@ -1,11 +1,14 @@
 #include "doctor.h"
 
+
+DOCTOR dr2;
+
+
 uint8 doctor_login_screen(void)
 {
     uint8 select = 0;
     system("cls");
-
-    puts("Doctor's login screen:");
+    puts("\nDoctor's login screen:");
     puts("______________________\n");
 
     puts("(1) Doctor in the hospital.");
@@ -84,46 +87,51 @@ void doctor_add_new(void)
 void doctor_enter_data(DOCTOR* Rdata)
 {
     /* Please note that "->" and "[]" have same precedence and executed "left to right" */
-    printf("Please enter doctor's name : ");
+    printf("Please enter doctor's name...: ");
     fflush(stdin);
     fgets((Rdata->nam), sizeof(Rdata->nam), stdin);
     (Rdata->nam)[strlen(&(Rdata->nam))-1] = '\0';
 
-    printf("Please enter gender        : ");
+    printf("Please enter gender..........: ");
     fflush(stdin);
     fgets(Rdata->gen, sizeof(Rdata->gen), stdin);
     (Rdata->gen)[strlen(&(Rdata->gen))-1] = '\0';
 
-    printf("Please enter specialization: ");
+    printf("Please enter specialization..: ");
     fflush(stdin);
     fgets(Rdata->spe, sizeof(Rdata->spe), stdin);
     Rdata->spe[strlen(&(Rdata->spe))-1] = '\0';
 
-    printf("Please enter national Id   : ");
+    printf("Please enter national Id.....: ");
     fflush(stdin);
     scanf("%llu", &(Rdata->n_id));
 
     Rdata->h_id = random_hospital_id();
 
-    printf("Please enter phone         : ");
+    printf("Please enter phone...........: ");
     fflush(stdin);
     scanf("%llu", &(Rdata->pho));
 
-    printf("Please enter salary        : ");
+    printf("Please enter salary..........: ");
     fflush(stdin);
     scanf("%lf", &(Rdata->sal));
+
+    printf("Please enter consultancy fees: ");
+    fflush(stdin);
+    scanf("%lf", &(Rdata->cons_fees));
     puts("-------------------------------------------------");
 }
 
 void doctor_view_data(DOCTOR* Vdata)
 {
-    printf("Doctor's name          : %s\n", Vdata->nam);
-    printf("Doctor's gender        : %s\n", Vdata->gen);
-    printf("Doctor's specialization: %s\n", Vdata->spe);
-    printf("Doctor's national_id   : %llu\n", Vdata->n_id);
-    printf("Doctor's phone         : %llu\n", Vdata->pho);
-    printf("Doctor's salary        : %0.3f\n", Vdata->sal);
-    printf("Doctor's hospital_id   : %llu\n", Vdata->h_id);
+    printf("Doctor's name............: %s\n", Vdata->nam);
+    printf("Doctor's gender..........: %s\n", Vdata->gen);
+    printf("Doctor's specialization..: %s\n", Vdata->spe);
+    printf("Doctor's national_id.....: %llu\n", Vdata->n_id);
+    printf("Doctor's phone...........: %llu\n", Vdata->pho);
+    printf("Doctor's salary..........: %0.3f\n", Vdata->sal);
+    printf("Doctor's consultancy fees: %0.3f\n", Vdata->cons_fees);
+    printf("Doctor's hospital_id.....: %llu\n", Vdata->h_id);
 }
 
 void doctor_edit_data(DOCTOR* Edata)
@@ -133,7 +141,7 @@ void doctor_edit_data(DOCTOR* Edata)
 
 uint8 doctor_check_id(void)
 {
-    DOCTOR dr2;
+    //DOCTOR dr2;
     uint64 id;
     uint8 result = 100;
     uint8 flag = 0xff;
@@ -152,15 +160,31 @@ uint8 doctor_check_id(void)
     }
     else if(0 == result)
     {
+        //doctor is not founded
         flag = 0;
     }
     else if(0xff == result)
     {
+        //doctor.pdf not fonded
         flag = 0xff;
     }
     return flag;
 
 }// end of doctor_check_id();
 
+void doctor_welcome_screen(uint8* option)
+{
+    system("cls");
+    puts("\nDoctor's Welcome screen");
+    puts("_______________________\n");
+    printf("Welcome Dr.\"%s\"\n\n", dr2.nam);
+    puts("Please select from the following options:");
+    puts("-----------------------------------------\n");
+    puts("(1) Follow up with a patient.\n");
+    puts("(2) View your today's cases.\n");
+    puts("-----------------------------------------");
+    fflush(stdin);
+    scanf("%i", &(*option));//(&*option == option), '&' and '*' same precedence, associativity right to left
 
+}
 

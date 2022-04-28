@@ -6,11 +6,13 @@ const char* file_doctor = "doctors.pdf";
 /*array of char to store JSON serialization format in it, to use in data writing*/
 const char* dr_w_format = "{\n\tName: \"%s\",\n\tGender:"
             " \"%s\",\n\tSpecialization: \"%s\",\n\tNational id: "
-            "%llu,\n\tHospital id: %llu,\n\tPhone: %llu,\n\tSalary: %0.3f\n}\n";
+            "%llu,\n\tHospital id: %llu,\n\tPhone: %llu,\n\tSalary: %0.3f\n\t"
+            "consultancy fees: %0.3f\n}\n";
 /*array of char to store JSON deserialization format in it, to use in data reading*/
 const char* dr_r_format = "\n\tName: \"%[^\"]\",\n\tGender:"
             " \"%[^\"]\",\n\tSpecialization: \"%[^\"]\",\n\tNational id: "
-            "%llu,\n\tHospital id: %llu,\n\tPhone: %llu,\n\tSalary: %lf";
+            "%llu,\n\tHospital id: %llu,\n\tPhone: %llu,\n\tSalary: %lf\n\t"
+            "consultancy fees: %lf";
 
 
 uint8 database_save_doctor(DOCTOR *dr)
@@ -23,7 +25,7 @@ uint8 database_save_doctor(DOCTOR *dr)
         file_dr = fopen(file_doctor, "w");
         flag = 1;
     }
-    fprintf(file_dr, dr_w_format, dr->nam, dr->gen, dr->spe, dr->n_id, dr->h_id, dr->pho, dr->sal);
+    fprintf(file_dr, dr_w_format, dr->nam, dr->gen, dr->spe, dr->n_id, dr->h_id, dr->pho, dr->sal, dr->cons_fees);
     fclose(file_dr);
     /*(flag==1) function could n't find file.pdf, or it is protected to write,
     so it created new file.pdf */
@@ -60,7 +62,9 @@ uint8 database_check_dr_id(uint64 hospital_id, DOCTOR *dr_id)
             }//end of while ( (char)c != (char)'{' );
             /*read this doctor's data*/
             /*for debugging:puts("I'm inside while(stop)");*/
-            fscanf(file_open, dr_r_format, &dr_id->nam, &dr_id->gen, &dr_id->spe, &dr_id->n_id, &dr_id->h_id, &dr_id->pho, &dr_id->sal);//read data from txt file in format_read.
+            //read data from txt file in format_read.
+            fscanf(file_open, dr_r_format, &dr_id->nam, &dr_id->gen, &dr_id->spe, &dr_id->n_id, &dr_id->h_id, &dr_id->pho, &dr_id->sal, &dr_id->cons_fees);
+
             if( hospital_id == (dr_id->h_id) )
             {
                 //printf("doctor is founded");
