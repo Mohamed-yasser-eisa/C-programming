@@ -24,6 +24,12 @@ typedef struct
     char gen[11]; //gender
     char spe[21]; //specialization to appoint a doctor
     char sym[256]; //symptoms of the pain
+
+    char rep[256]; //report from doctor
+    char med[256]; //medicine from doctor
+    char fdat[20]; //next follow up date
+    char ftim[20]; //next follow up time
+
     char dat[20]; //date of visit "DD/MM/YYYY"
     char tim[20]; //time of visit "HH/MM"
     char insurance; //does the patient has insurance or not (Y/N);

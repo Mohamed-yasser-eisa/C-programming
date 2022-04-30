@@ -1,6 +1,31 @@
 #include "local_system.h"
 
 
+
+
+void hospital_welcome_screen(uint8* selection)
+{
+    system("cls");  /*clear console screen*/
+    puts("\n====================\tWelcome to Egypt hospital\t====================");
+    puts("____________________________________________________________________________\n\n");
+    puts("Please select from the following options:");
+    puts("-----------------------------------------\n");
+    puts("(1) I'm a doctor.\n");
+    puts("(2) I'm a patient.\n");
+    puts("(3) View data.\n");
+    puts("(4) Edit data.\n");
+    puts("(5) Change theme.\n");
+    puts("(6) Exit.\n");
+    puts("------------------------------------------\n");
+    printf("Option: ");
+    fflush(stdin);
+    scanf("%i", &*selection); // or scanf("%i", selection);
+}
+
+
+
+
+
 void change_theme(void)
 {
     /*

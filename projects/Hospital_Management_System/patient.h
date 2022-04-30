@@ -15,14 +15,9 @@ function prints options for patient and takes the selection.
 */
 void patient_welcome_screen(uint8* option);
 /*
-function takes selection and call the proper function for that selection
-returns '0' in case of wrong choice
-*/
-uint8 patient_selection(uint8* selection);
-/*
 function takes patient's data
 */
-void patient_first_visit(PATIENT* p);
+void patient_reserve_appointment(void);
 /*
 function gets patient's data
 */
@@ -31,6 +26,10 @@ void patient_get_data(PATIENT* d);
 function prints patient's data
 */
 void patient_print_data(PATIENT* d);
+/*
+
+*/
+uint8 patient_check_n_id(void);
 
 
 #endif // __PATIENT__

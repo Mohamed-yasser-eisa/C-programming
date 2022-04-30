@@ -1,0 +1,24 @@
+{
+	Name: "mohamed yasser",
+	Gender: "male",
+	Wanted specialization: "dentistry",
+	National id: 123,
+	Date: 29/4/2022
+	Time: 7/12
+	Phone: 0123456,
+	Insurance: N
+	Age: 23
+	Symptoms: "has a headach and a cold flu"
+}
+{
+	Name: "sara ahmed",
+	Gender: "female",
+	Wanted specialization: "eyes",
+	National id: 777,
+	Date: 15/7/2010
+	Time: 12/30
+	Phone: 0444,
+	Insurance: N
+	Age: 15
+	Symptoms: "has a cold flu and a pain in her eyes"
+}

@@ -15,8 +15,7 @@
 
 /*function returns '1' if the doctor works in the hospital, and '2' if new doctor.*/
 uint8 doctor_login_screen(void);
-/*function edit doctor's data.*/
-void doctor_edit_data(DOCTOR* Edata);
+
 /*function gets doctor's data from user.*/
 void doctor_enter_data(DOCTOR* Rdata);
 
@@ -45,7 +44,10 @@ it returns number of selected option
 void doctor_welcome_screen(uint8* option);
 
 
-
+/*
+function prints patient's data, and writes: (appointment - medicine - write a report);
+*/
+uint8 doctor_follow_up(void);
 
 
 #endif // __LOCALSYSTEM__

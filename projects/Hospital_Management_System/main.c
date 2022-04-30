@@ -19,27 +19,17 @@
 int main()
 {
     uint8 select = 0;
-    system("COLOR 2F");
+    uint8 doctor_id = 0;
+    uint8 patient_n_id = 0;
+    uint8 exit_program = 0;
+    uint8 dr_follow_up 0xff;
 
 
+    system("COLOR 2F"); //set theme to: (Background: green, Text: white);
 
-    while(1)
+    while( 0 == exit_program)
     {
-        system("cls");  /*clear console screen*/
-        puts("\n====================\tWelcome to Egypt hospital\t====================");
-        puts("____________________________________________________________________________\n\n");
-        puts("Please select from the following options:");
-        puts("-----------------------------------------");
-        puts("(1) I'm a doctor.\n");
-        puts("(2) I'm a nurse.\n");
-        puts("(3) I'm a patient.\n");
-        puts("(4) View informations.\n");
-        puts("(5) Change theme.\n");
-        puts("(6) Exit.");
-        puts("------------------------------------------");
-
-        fflush(stdin);
-        scanf("%i", &select);
+        hospital_welcome_screen(&select);
 
         switch(select)
         {
@@ -49,31 +39,63 @@ int main()
                 if(1 == select)
                 {
                     //doctor in the hospital
-                    uint8 result = 4;
-                    result = doctor_check_id();
-                    if(0 == result)
+                    doctor_id = doctor_check_id();
+                    if(0 == doctor_id)
                     {
-                        system("cls");
-                        puts("Your \"Hospital Id\" is not in the database!");
-                        puts("Please make sure you enter your \"Hospital Id\" correctly.");
-                    }
-                    else if(1 == result) //doctor is founded
+                        puts("Your \"Hospital id\" is not in the database!\n");
+                        puts("Please make sure that you entered your \"Hospital id\" correctly.\n");
+                        printf("Press any key to return main menu... ");
+                        fflush(stdin);
+                        getch();
+                    }//end of if(0 == doctor_id);
+                    else if(1 == doctor_id) //doctor is founded
                     {
                         doctor_welcome_screen(&select);
                         if(1 == select)
                         {
-                            //follow up with a patient
+                            //follow up with a patient:
+                            dr_follow_up = doctor_follow_up();
+                            switch(dr_follow_up)
+                            {
+                                case 0:
+                                    //patient not founded
+                                    break;
+                                case 1:
+                                    //recommend a follow up visit
+                                    break;
+                                case 2:
+                                    //write a report
+                                    break;
+                                case 3:
+                                    //Describe a medicine
+                                    break;
+                                case 4:
+                                    //Database is not founded
+                                    break;
+                            }
+                            //doctor recommends a follow up visit and determine its data and time
+                            //doctor writes a report for the patient.
+                            //doctor describes medicine
+
                         }
                         else if(2 == select)
                         {
-                            //view today's cases
+                            //view today's appointments
                         }
-                        fflush(stdin);
-                        getch();
-                    }
-                    else if(0xff == result)
+                        else
+                        {
+                            //return to main menu.
+                        }
+                    }//end of else if(1 == doctor_id) //doctor is founded
+                    else if(0xff == doctor_id)
                     {
-                        puts("doctor.pdf is not founded");
+                        puts("There is no doctors database!\n");
+                        puts("Please make sure:\n");
+                        puts("\t--> that this is not the first time to run the system.");
+                        puts("\t--> that you did n't change directory of doctors database file.");
+                        puts("\t--> that doctors database file is not deleted.");
+                        puts("\t--> that doctors database file is not renamed.\n");
+                        printf("Press any key to return main menu... ");
                         fflush(stdin);
                         getch();
                     }
@@ -82,38 +104,82 @@ int main()
                 {
                     //new doctor
                     doctor_add_new();
-                }
+                } //end of else if(2 == select);
                 break;
             case 2:
-                //
-                break;
-            case 3:
                 //I'm a patient
-                //patient welcome screen
                 patient_welcome_screen(&select);
-                if(0 == patient_selection(&select))
+                if(1 == select)
                 {
-                    //wrong choice
-                    break;
+                    //reserve an appointment
+                    patient_reserve_appointment();
+                }
+                else if(2 == select)
+                {
+                    //follow up
+                    patient_n_id = patient_check_n_id();
+                    if(1 == patient_n_id)
+                    {
+                        //patient is founded
+                        puts("--> Patient is founded!!\n");
+                        //patient came in his date
+                        //print the follow up fees
+                    }
+                    else if(0 == patient_n_id)
+                    {
+                        //patient is not founded
+                        puts("--> Patient \"National id\" is not in the database!\n");
+                        puts("--> Please make sure that you entered patient's \"National id\" correctly.\n");
+                        printf("--> Press any key to return main menu... ");
+                        fflush(stdin);
+                        getch();
+                    }
+                    else
+                    {
+                        //database is not founded
+                        puts("There is no patients database!\n");
+                        puts("Please make sure:\n");
+                        puts("\t--> that this is not the first time to run the system.");
+                        puts("\t--> that you did n't change directory of patients database file.");
+                        puts("\t--> that patients' database file is not deleted.");
+                        puts("\t--> that patients' database file is not renamed.\n");
+                        printf("Press any key to return main menu... ");
+                        fflush(stdin);
+                        getch();
+                    }
+                }
+                else if(2 == select)
+                {
+                    //inquire
+                }
+                else if(2 == select)
+                {
+                    //emergency case
                 }
                 break;
+            case 3:
+                //view data
+                break;
             case 4:
-                /*background color*/
-                change_theme();
+                //edit data
                 break;
             case 5:
-                //
+                //change theme
+                change_theme();
+                break;
+            case 6:
+                exit_program = 1;
                 break;
             default:
-                puts("Invalid choice!");
-                puts("Time out...");
-                return 0;
-        }
+                puts("\n--> Invalid choice!");
+                puts("--> Time out...\n");
+                exit_program = 1; //terminate while() and close the program.
+        }// end of switch(select);
 
-        //getche();
+    } //end of while(1);
 
-    }
-}
+    return 0;
+} //end of main();
 
 /*****************************************************************
 * Revision Log:
