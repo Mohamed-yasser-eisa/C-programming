@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-30T11:08:54.113Z" agent="5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="xm58-TZJ5tktoVtmFn4y" version="17.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-30T13:40:35.104Z" agent="5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="HfpbxbVq3xmGe5C8AJke" version="17.5.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1304" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="764" dy="310" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -101,7 +101,7 @@
         <mxCell id="tDVTIdohdq9xuzLwemKo-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="tDVTIdohdq9xuzLwemKo-0" target="WIyWlLk6GJQsqaUBKTNV-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tDVTIdohdq9xuzLwemKo-0" value="select an option:&lt;br&gt;1- Reserve an appointment.&lt;br&gt;2- View patient&#39;s information.&lt;br&gt;3- Edit a patient information (edit info. - delete).&lt;br&gt;4- View clinic information (next case number - fees).&lt;br&gt;5- Set up clinic informations. (name - fees).&lt;br&gt;6- Exit." style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="tDVTIdohdq9xuzLwemKo-0" value="select an option:&lt;br&gt;1- Reserve an appointment.&lt;br&gt;2- View patient&#39;s information.&lt;br&gt;3- Edit patient&#39;s information (edit info. - delete).&lt;br&gt;4- View clinic information (next case number - fees).&lt;br&gt;5- Set up clinic informations. (name - fees).&lt;br&gt;6- Exit." style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="931" y="230" width="320" height="110" as="geometry" />
         </mxCell>
         <mxCell id="tDVTIdohdq9xuzLwemKo-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.467;entryY=-0.027;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="tDVTIdohdq9xuzLwemKo-3" target="tDVTIdohdq9xuzLwemKo-56">
