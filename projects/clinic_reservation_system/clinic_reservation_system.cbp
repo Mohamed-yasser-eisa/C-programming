@@ -31,9 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="clinic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="clinic.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="patient.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="patient.h" />
+		<Unit filename="stdTypedef.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

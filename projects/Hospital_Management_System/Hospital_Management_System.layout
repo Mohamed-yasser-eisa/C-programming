@@ -2,24 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="local_system.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+	<File name="local_system.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="278" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="patient.c" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5698" topLine="163" />
-		</Cursor>
-	</File>
-	<File name="database.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="6521" topLine="156" />
-		</Cursor>
-	</File>
-	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1754" topLine="67" />
+			<Cursor1 position="700" topLine="24" />
 		</Cursor>
 	</File>
 	<File name="hospital_structs.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
@@ -27,9 +12,9 @@
 			<Cursor1 position="911" topLine="17" />
 		</Cursor>
 	</File>
-	<File name="patient.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="11" zoom_2="0">
+	<File name="database.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="583" topLine="16" />
+			<Cursor1 position="1091" topLine="17" />
 		</Cursor>
 	</File>
 	<File name="stdTypedef.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
@@ -37,24 +22,39 @@
 			<Cursor1 position="332" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="doctor.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="7312" topLine="202" />
-		</Cursor>
-	</File>
-	<File name="database.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1091" topLine="17" />
-		</Cursor>
-	</File>
 	<File name="doctor.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1132" topLine="29" />
 		</Cursor>
 	</File>
-	<File name="local_system.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+	<File name="patient.c" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="700" topLine="24" />
+			<Cursor1 position="5698" topLine="163" />
+		</Cursor>
+	</File>
+	<File name="local_system.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="278" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="doctor.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7312" topLine="202" />
+		</Cursor>
+	</File>
+	<File name="database.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6521" topLine="156" />
+		</Cursor>
+	</File>
+	<File name="patient.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="11" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="583" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="644" topLine="17" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

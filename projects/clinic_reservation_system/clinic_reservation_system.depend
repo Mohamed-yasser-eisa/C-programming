@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1651384452 source:e:\my_github_files\c\c-programming\projects\clinic_reservation_system\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"stdTypedef.h"
+	"patient.h"
+	"clinic.h"
+
+1651317334 e:\my_github_files\c\c-programming\projects\clinic_reservation_system\stdtypedef.h
+
+1651384952 source:e:\my_github_files\c\c-programming\projects\clinic_reservation_system\patient.c
+	"patient.h"
+
+1651384528 e:\my_github_files\c\c-programming\projects\clinic_reservation_system\patient.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"stdTypedef.h"
+	"clinic.h"
+
+1651384586 source:e:\my_github_files\c\c-programming\projects\clinic_reservation_system\clinic.c
+	"clinic.h"
+
+1651384452 e:\my_github_files\c\c-programming\projects\clinic_reservation_system\clinic.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"stdTypedef.h"
+	"patient.h"
+

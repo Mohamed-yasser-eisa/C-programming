@@ -22,7 +22,7 @@ int main()
     uint8 doctor_id = 0;
     uint8 patient_n_id = 0;
     uint8 exit_program = 0;
-    uint8 dr_follow_up 0xff;
+    uint8 dr_follow_up = 0xff;
 
 
     system("COLOR 2F"); //set theme to: (Background: green, Text: white);
