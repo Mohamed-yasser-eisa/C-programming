@@ -6,7 +6,7 @@
 #include <conio.h>
 #include "stdTypedef.h"
 #include "clinic.h"
-#define ArraySize 2
+#define ArraySize 3
 
 typedef struct
 {
