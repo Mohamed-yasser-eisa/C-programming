@@ -4,6 +4,18 @@
 DOCTOR dr2;
 PATIENT p2;
 
+/********************** static functions: ***********************************/
+static void follow_up_visit(uint64 national_id)
+{
+    p2->fUP
+}
+
+
+
+
+
+
+/*********************************************************/
 
 uint8 doctor_login_screen(void)
 {
@@ -57,7 +69,7 @@ void doctor_add_new(void)
                 save_data = database_save_doctor(&d1);
                 if(0 == save_data)
                 {
-                    puts("Your data are saved successfully in our database.");
+                    puts("--> Your data are saved successfully in our database.");
                     printf("Please press any key to return main menu...");
                     fflush(stdin);
                     getch();
@@ -185,13 +197,12 @@ void doctor_welcome_screen(uint8* option)
 
 }
 
-uint8 doctor_follow_up(void)
+void doctor_follow_up(void)
 {
     uint64 id;
     uint8 patientFounded = 0;
-    uint8 flag = 0xff;
 
-
+    system("cls");
     puts("\nDoctor follow up with patient screen");
     puts("____________________________________\n");
     printf("Please enter patient's national id: ");
@@ -199,13 +210,11 @@ uint8 doctor_follow_up(void)
     patientFounded = database_check_pa_n_id(id, &p2);
     switch(patientFounded)
     {
-        case 0:
-            //patient not founded
+        case 0://patient not founded
             puts("Patient is not founded.");
-            flag = 0;
             break;
-        case 1:
-            //patient is founded
+        case 1://patient is founded
+            uint8 select = 0;
             puts("Patient is founded.\n");
             puts("Please select an option:");
             puts("---------------------------\n");
@@ -214,18 +223,20 @@ uint8 doctor_follow_up(void)
             puts("(3) Describe a medicine.\n");
             puts("---------------------------\n");
             fflush(stdin);
-            scanf("%i", &flag);
+            scanf("%i", &select);
+            switch(select)
+            {
+                case 1://recommend a follow up visit
+                    break;
+                case 2://write a report
+                    break;
+                case 3://Describe a medicine
+                    break;
+            }
             break;
-        default:
-            //database not founded
+        default://database not founded
             puts("Database is not founded.");
-            flag = 4;
             break;
     }//end of switch(patientFounded);
-
-    return flag;//return; (0 or 1 or 2 or 3 or 4);
-
-
-
 }//end of doctor_follow_up(void);
 

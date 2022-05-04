@@ -47,7 +47,8 @@ void doctor_welcome_screen(uint8* option);
 /*
 function prints patient's data, and writes: (appointment - medicine - write a report);
 */
-uint8 doctor_follow_up(void);
+void doctor_follow_up(void);
+
 
 
 #endif // __LOCALSYSTEM__

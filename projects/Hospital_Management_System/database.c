@@ -172,7 +172,16 @@ uint8 database_check_pa_n_id(uint64 n_id, PATIENT* pa)
     return flag; //return search result.
 }
 
+/*
+function writes follow up visit for the patient
+*/
+void database_patient_follow_up(uint64 national_id)
+{
+    FIEL* open_file;
+    open_file = fopen(file_patient, "a");
+    //file will be opened,because it is previously opened for patient id check.
 
+}
 
 
 

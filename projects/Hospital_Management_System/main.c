@@ -30,49 +30,25 @@ int main()
     while( 0 == exit_program)
     {
         hospital_welcome_screen(&select);
-
         switch(select)
         {
             /*I'm a doctor*/
             case 1:
                 select = doctor_login_screen();
-                if(1 == select)
+                if(1 == select)//doctor in the hospital
                 {
-                    //doctor in the hospital
                     doctor_id = doctor_check_id();
-                    if(0 == doctor_id)
+                    if(0 == doctor_id)//doctor not found
                     {
-                        puts("Your \"Hospital id\" is not in the database!\n");
-                        puts("Please make sure that you entered your \"Hospital id\" correctly.\n");
-                        printf("Press any key to return main menu... ");
-                        fflush(stdin);
-                        getch();
+                        puts("--> Your \"Hospital id\" is not in the database!\n");
+                        puts("--> Please make sure that you entered your \"Hospital id\" correctly.\n");
                     }//end of if(0 == doctor_id);
                     else if(1 == doctor_id) //doctor is founded
                     {
                         doctor_welcome_screen(&select);
-                        if(1 == select)
+                        if(1 == select)//follow up with a patient:
                         {
-                            //follow up with a patient:
-                            dr_follow_up = doctor_follow_up();
-                            switch(dr_follow_up)
-                            {
-                                case 0:
-                                    //patient not founded
-                                    break;
-                                case 1:
-                                    //recommend a follow up visit
-                                    break;
-                                case 2:
-                                    //write a report
-                                    break;
-                                case 3:
-                                    //Describe a medicine
-                                    break;
-                                case 4:
-                                    //Database is not founded
-                                    break;
-                            }
+                            doctor_follow_up();
                             //doctor recommends a follow up visit and determine its data and time
                             //doctor writes a report for the patient.
                             //doctor describes medicine
@@ -95,14 +71,13 @@ int main()
                         puts("\t--> that you did n't change directory of doctors database file.");
                         puts("\t--> that doctors database file is not deleted.");
                         puts("\t--> that doctors database file is not renamed.\n");
-                        printf("Press any key to return main menu... ");
-                        fflush(stdin);
-                        getch();
                     }
+                    printf("Press any key to return main menu... ");
+                    fflush(stdin);
+                    getch();
                 }//end of if(1 == select);
-                else if(2 == select)
+                else if(2 == select)//new doctor
                 {
-                    //new doctor
                     doctor_add_new();
                 } //end of else if(2 == select);
                 break;

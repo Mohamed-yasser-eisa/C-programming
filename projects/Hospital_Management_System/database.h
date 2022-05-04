@@ -34,5 +34,12 @@ returns '0xff' if patients.pdf file is not found.
 */
 uint8 database_check_pa_n_id(uint64 n_id, PATIENT* pa);
 
+/*
+function writes follow up visit for the patient
+*/
+void database_patient_follow_up(uint64 national_id);
+
+
+
 #endif // __DATABASE__
 

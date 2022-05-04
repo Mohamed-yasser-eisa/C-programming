@@ -27,8 +27,7 @@ typedef struct
 
     char rep[256]; //report from doctor
     char med[256]; //medicine from doctor
-    char fdat[20]; //next follow up date
-    char ftim[20]; //next follow up time
+    char fUP[256]; //follow up visit
 
     char dat[20]; //date of visit "DD/MM/YYYY"
     char tim[20]; //time of visit "HH/MM"
