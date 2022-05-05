@@ -20,7 +20,7 @@ uint8 doctor_login_screen(void);
 void doctor_enter_data(DOCTOR* Rdata);
 
 /*
-function checks doctor's id is in database or not.
+function checks doctor's hospital id is in database or not.
 if returned '0' doctor not founded
 if returned '1' doctor is founded
 if returned '0xff' doctor.pdf not founded
@@ -30,7 +30,7 @@ uint8 doctor_check_id(void);
 /*
 function prints doctor's data from database.
 */
-void doctor_view_data(DOCTOR* Vdata);
+void doctor_print_data(DOCTOR* Vdata);
 
 /*
 function reads input data from screen and add it to database
@@ -49,7 +49,10 @@ function prints patient's data, and writes: (appointment - medicine - write a re
 */
 void doctor_follow_up(void);
 
-
+/*
+function display all doctors' data from database.
+*/
+void doctor_view_data(void);
 
 #endif // __LOCALSYSTEM__
 

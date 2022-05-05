@@ -1,83 +1,30 @@
 {
 	Name: "Mohamed Yasser",
 	Gender: "male",
-	Specialization: "Biomedical engineer",
-	National id: 12345678912345,
-	Hospital id: 285212672,
-	Phone: 1234567891,
-	Salary: 10000.563
+	Specialization: "dentistry",
+	National id: 123,
+	Hospital id: 913611076,
+	Phone: 011,
+	Salary: 50.600
+	Consultancy fees: 110.230
 }
 {
-	Name: "Ali Mohamed",
-	Gender: "male",
-	Specialization: "engineer",
-	National id: 4569987,
-	Hospital id: 570425344,
-	Phone: 36524,
-	Salary: 1256.590
-}
-{
-	Name: "omar Ibrahim",
-	Gender: "male",
-	Specialization: "engineer",
-	National id: 1256643,
-	Hospital id: 520093696,
-	Phone: 36524,
-	Salary: 100253.630
-}
-{
-	Name: "Adel Adel",
-	Gender: "male",
-	Specialization: "Biomedical engineer",
-	National id: 123456,
-	Hospital id: 251658240,
-	Phone: 654321,
-	Salary: 12000.365
-}
-{
-	Name: "mahmoud ali",
-	Gender: "male",
-	Specialization: "engineer",
-	National id: 888,
-	Hospital id: 335544320,
-	Phone: 777,
-	Salary: 56423.654
-}
-{
-	Name: "ali mo",
-	Gender: "male",
-	Specialization: "dr",
-	National id: 111,
-	Hospital id: 385875968,
-	Phone: 222,
-	Salary: 33.600
-}
-{
-	Name: "menna yasser",
+	Name: "Nermeen Omar",
 	Gender: "female",
-	Specialization: "engineer",
+	Specialization: "eyes",
 	National id: 456,
-	Hospital id: 486539264,
-	Phone: 66554,
-	Salary: 56456.000
+	Hospital id: 926289225,
+	Phone: 015,
+	Salary: 55.630
+	Consultancy fees: 22.700
 }
 {
-	Name: "Mohamed Samir",
+	Name: "Ahmed Yasser",
 	Gender: "male",
-	Specialization: "dentist",
-	National id: 456,
-	Hospital id: 112105744,
-	Phone: 123,
-	Salary: 10000.500
-	consultancy fees: 100.000
-}
-{
-	Name: "nareman ezz",
-	Gender: "female",
-	Specialization: "doctor",
-	National id: 456,
-	Hospital id: 577056484,
-	Phone: 321,
-	Salary: 12.360
-	consultancy fees: 1.500
+	Specialization: "dentistry",
+	National id: 887,
+	Hospital id: 8462281,
+	Phone: 016,
+	Salary: 5000.500
+	Consultancy fees: 150.000
 }

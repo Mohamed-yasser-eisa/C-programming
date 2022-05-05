@@ -14,23 +14,35 @@
 function prints options for patient and takes the selection.
 */
 void patient_welcome_screen(uint8* option);
+
 /*
-function takes patient's data
+function takes patient's details and save it in database
 */
 void patient_reserve_appointment(void);
+
+
 /*
-function gets patient's data
+function scans patient's national id and search for it in database
+returns '0' if patient is founded
+returns '1' if patient is not founded
+returns '0xFF' if patients' database is not founded
 */
-void patient_get_data(PATIENT* d);
+uint8 patient_check_n_id(void);
+
+/*
+function prints patients follow up visit details and adds fees to patient's data.
+*/
+void patient_follow_up(void);
+
+/*
+function display all patients' data from database.
+*/
+void patient_view_data(void);
+
 /*
 function prints patient's data
 */
 void patient_print_data(PATIENT* d);
-/*
-
-*/
-uint8 patient_check_n_id(void);
-
 
 #endif // __PATIENT__
 

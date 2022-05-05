@@ -1,7 +1,6 @@
 #include "local_system.h"
 
-
-
+const uint16 password = 2030;
 
 void hospital_welcome_screen(uint8* selection)
 {
@@ -103,4 +102,31 @@ uint64 random_hospital_id(void)
     return (random_id * random_id);
 }
 
+uint8 system_view_data(void)
+{
+    uint16 pass = 0;
+    uint8 flag = 104;
+    system("cls");
+    puts("\nView data screen:");
+    puts("_____________________\n");
 
+    puts("Please enter admin password:");
+    puts("-----------------------------------------\n");
+    printf("password: ");
+    fflush(stdin);
+    scanf("%hu", &pass);
+    puts("\n-----------------------------------------\n");
+    if(pass == password)
+    {
+        puts("(1) View patients' data\n");
+        puts("(2) View doctors' data\n");
+        fflush(stdin);
+        scanf("%hu", &flag);
+    }
+    else
+    {
+        flag = 0; //wrong password.
+    }
+    system("cls");
+    return flag;
+}

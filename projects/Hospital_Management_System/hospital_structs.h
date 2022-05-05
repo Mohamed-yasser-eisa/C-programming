@@ -29,12 +29,11 @@ typedef struct
     char med[256]; //medicine from doctor
     char fUP[256]; //follow up visit
 
-    char dat[20]; //date of visit "DD/MM/YYYY"
-    char tim[20]; //time of visit "HH/MM"
     char insurance; //does the patient has insurance or not (Y/N);
     uint8 age;
     uint64 n_id; //national_id
     uint64 pho; //phone
+    float32 fees;
 
 }PATIENT;
 

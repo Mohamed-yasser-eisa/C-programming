@@ -7,12 +7,20 @@
 #include "stdTypedef.h"
 
 
+
 /*
 function displays hospital welcome screen.
 it takes pointer to select variable and return nothing
 */
 void hospital_welcome_screen(uint8* selection);
 
+/*
+function checks the password is correct or not, and return the selected option:
+'1' view doctors' data.
+'2' view patients' data.
+'3' return main menu.
+*/
+uint8 system_view_data(void);
 
 /*
 function changes layout of the console
