@@ -38,7 +38,6 @@ int main()
         switch(select)
         {
             case 1: //I'm a doctor
-////////////////////////////////////////////////////////////////////////////
                 select = doctor_login_screen();
                 if(1 == select)//doctor in the hospital
                 {
@@ -54,17 +53,13 @@ int main()
                         if(1 == option)//follow up with a patient:
                         {
                             doctor_follow_up();
-                            //doctor recommends a follow up visit and determine its data and time
-                            //doctor writes a report for the patient.
-                            //doctor describes medicine
-
                         }
                         else
                         {
                             //do nothing and return to main menu.
                         }
                     }//end of else if(1 == doctor_id) //doctor is founded
-                    else if(104 == doctor_id)
+                    else
                     {
                         puts("There is no doctors database!\n");
                         puts("Please make sure:\n");
@@ -81,7 +76,6 @@ int main()
                 {
                     doctor_add_new();
                 } //end of else if(2 == select);
-///////////////////////////////////////////////////////////////////////////////////////
             break;
             case 2: //I'm a patient
                 patient_welcome_screen(&option);
@@ -125,7 +119,7 @@ int main()
             exit_program = 1;
             break;
             case 3:
-                password_check = system_view_data();
+                password_check = system_check_pass();
                 if(0 == password_check)
                 {
                     puts("\nWrong password!!\n");
@@ -150,6 +144,28 @@ int main()
             break;
             case 4:
                 //edit data
+                password_check = system_check_pass();
+                if(0 == password_check)
+                {
+                    puts("\nWrong password!!\n");
+                    puts("You must be an admin to show data.\n");
+                }
+                else if(1 == password_check)
+                {
+                    patient_edit_data();
+                }
+                else if(2 == password_check)
+                {
+                   doctor_edit_data();
+                }
+                else
+                {
+                    puts("\nInvalid selection!!\n");
+                }
+                printf("Press any key to return main menu... ");
+                fflush(stdin);
+                getch();
+                exit_program = 1;
                 break;
             case 5:
                 //change theme

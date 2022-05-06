@@ -20,7 +20,7 @@ function checks the password is correct or not, and return the selected option:
 '2' view patients' data.
 '3' return main menu.
 */
-uint8 system_view_data(void);
+uint8 system_check_pass(void);
 
 /*
 function changes layout of the console

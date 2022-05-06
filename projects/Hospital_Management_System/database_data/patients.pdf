@@ -8,9 +8,9 @@
 	Insurance: y
 	Age: 23
 	Symptoms: "i am ok",
-	Report: "Not determined",
+	Report: "he has cold flue",
 	Medicine: "Not determined",
-	Follow up visit: "Not determined"
+	Follow up visit: "I recomment patient come agin after 3 weeks to check up"
 }
 {
 	Name: "Amar yasser",
@@ -36,6 +36,20 @@
 	Insurance: y
 	Age: 23
 	Symptoms: "i am ok",
+	Report: "Not determined",
+	Medicine: "Not determined",
+	Follow up visit: "Not determined"
+}
+{
+	Name: "Omar Ibrahim",
+	Gender: "male",
+	Wanted specialization: "bio",
+	National id: 44551,
+	Paid fees: 125.360,
+	Phone: 0123,
+	Insurance: Y
+	Age: 22
+	Symptoms: "ok",
 	Report: "Not determined",
 	Medicine: "Not determined",
 	Follow up visit: "Not determined"

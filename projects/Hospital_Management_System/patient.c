@@ -13,6 +13,7 @@ static void patient_get_data(PATIENT* d);
 
 
 
+
 /******************************************************************************/
 
 
@@ -67,7 +68,7 @@ void patient_reserve_appointment(void)
 
         if(1 == select) //Save data to database
         {
-            if(0 == database_save_patient(&p1))
+            if(0 == database_save_patient(p1.n_id ,&p1))
             {
                 puts("Patient's data are saved successfully in patient.pdf database file.");
             }
@@ -191,7 +192,7 @@ void patient_follow_up(void)
     printf("Paid fees: ");
     scanf("%f", &fees);
     p1.fees += fees;
-    database_save_patient(&p1); //overwrite old patient's data
+    database_save_patient(p1.n_id, &p1); //overwrite old patient's data
     printf("Patient's total paid fees = (%0.3f)\n\n", p1.fees);
 }
 
@@ -200,3 +201,29 @@ void patient_view_data(void)
     puts("Patients' data in database are:\n");
     database_view_patients();
 }
+
+void patient_edit_data(void)
+{
+    uint64 old_id;
+    uint8 founded;
+    founded = patient_check_n_id();
+    if(1 == founded)
+    {
+        old_id = p1.n_id;
+        system("cls");
+        puts("\nPatient edit data screen:");
+        puts("_____________________________\n");
+        puts("Please enter new patient's data:\n");
+        patient_get_data(&p1);
+        database_edit_patient(old_id ,&p1);
+        puts("================================");
+        puts("Patient's new data are:\n");
+        patient_print_data(&p1);
+    }
+    else
+    {
+        puts("\n-->Patient not founded!\n");
+    }
+}
+
+

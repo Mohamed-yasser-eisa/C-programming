@@ -9,6 +9,7 @@
 #include "stdTypedef.h"
 #include "hospital_structs.h"
 #include "database.h"
+#include "patient.h"
 #include "local_system.h"
 
 
@@ -53,6 +54,11 @@ void doctor_follow_up(void);
 function display all doctors' data from database.
 */
 void doctor_view_data(void);
+
+
+void doctor_print_data(DOCTOR* Vdata);
+
+void doctor_edit_data(void);
 
 #endif // __LOCALSYSTEM__
 

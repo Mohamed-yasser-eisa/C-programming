@@ -102,12 +102,12 @@ uint64 random_hospital_id(void)
     return (random_id * random_id);
 }
 
-uint8 system_view_data(void)
+uint8 system_check_pass(void)
 {
     uint16 pass = 0;
     uint8 flag = 104;
     system("cls");
-    puts("\nView data screen:");
+    puts("\nCheck password screen:");
     puts("_____________________\n");
 
     puts("Please enter admin password:");
@@ -118,8 +118,8 @@ uint8 system_view_data(void)
     puts("\n-----------------------------------------\n");
     if(pass == password)
     {
-        puts("(1) View patients' data\n");
-        puts("(2) View doctors' data\n");
+        puts("(1) Patients' data\n");
+        puts("(2) Doctors' data\n");
         fflush(stdin);
         scanf("%hu", &flag);
     }

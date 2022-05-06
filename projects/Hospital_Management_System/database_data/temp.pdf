@@ -1,42 +1,30 @@
 {
-	Name: "Mohamed yasser",
+	Name: "ali Ali",
 	Gender: "male",
-	Wanted specialization: "doctor",
-	National id: 123,
-	Paid fees: 220.500,
-	Phone: 011,
-	Insurance: y
-	Age: 23
-	Symptoms: "i am ok",
-	Report: "Not determined",
-	Medicine: "Not determined",
-	Follow up visit: "Not determined"
+	Specialization: "embedded systems en",
+	National id: 1122,
+	Hospital id: 424895769,
+	Phone: 0123,
+	Salary: 115.300
+	Consultancy fees: 15.230
 }
 {
-	Name: "Amar yasser",
-	Gender: "male",
-	Wanted specialization: "eyes",
-	National id: 234,
-	Paid fees: 66.300,
-	Phone: 010,
-	Insurance: Y
-	Age: 20
-	Symptoms: "loop loop",
-	Report: "Not determined",
-	Medicine: "Not determined",
-	Follow up visit: "Not determined"
+	Name: "Nermeen Omar",
+	Gender: "female",
+	Specialization: "eyes",
+	National id: 456,
+	Hospital id: 926289225,
+	Phone: 015,
+	Salary: 55.630
+	Consultancy fees: 22.700
 }
 {
-	Name: "Ahmed yasser",
+	Name: "Ahmed Yasser",
 	Gender: "male",
-	Wanted specialization: "doctor",
-	National id: 345,
-	Paid fees: 100.500,
-	Phone: 011,
-	Insurance: y
-	Age: 23
-	Symptoms: "i am ok",
-	Report: "Not determined",
-	Medicine: "Not determined",
-	Follow up visit: "Not determined"
+	Specialization: "dentistry",
+	National id: 887,
+	Hospital id: 8462281,
+	Phone: 016,
+	Salary: 5000.500
+	Consultancy fees: 150.000
 }

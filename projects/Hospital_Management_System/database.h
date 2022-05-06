@@ -14,7 +14,8 @@ function saves doctor's data to "doctor.pdf" file
 it returns '0' if file is found and data are written successfully
 it returns '1' if it created new file to save data in it
 */
-uint8 database_save_doctor(DOCTOR *dr);
+
+uint8 database_save_doctor(uint64 ID, DOCTOR *dr);
 
 /*
 function check doctor's id:
@@ -29,7 +30,7 @@ function saves patient's data to "patient.pdf" file
 it returns '0' if file is found and data are written successfully
 it returns '1' if it created new file to save data in it
 */
-uint8 database_save_patient(PATIENT *pa);
+uint8 database_save_patient(uint64 ID, PATIENT *pa);
 /*
 function returns if patient's national id is in our database or not.
 returns '1' if patient is founded, and returns data of this patient to be ready.
@@ -52,6 +53,10 @@ void database_view_patients(void);
 function display all doctors' data from database.
 */
 void database_view_doctors(void);
+
+/*function takes new patient's data*/
+void database_edit_patient(uint64 ID ,PATIENT* p);
+void database_edit_doctor(uint64 ID, DOCTOR* d);
 
 #endif // __DATABASE__
 

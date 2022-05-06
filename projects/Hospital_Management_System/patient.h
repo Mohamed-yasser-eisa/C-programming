@@ -44,5 +44,8 @@ function prints patient's data
 */
 void patient_print_data(PATIENT* d);
 
+void patient_edit_data(void);
+
+
 #endif // __PATIENT__
 
