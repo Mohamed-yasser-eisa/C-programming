@@ -77,7 +77,6 @@ void doctor_add_new(void)
                 puts("\n-------------------------------------");
                 doctor_enter_data(&dr2);
                 doctor_print_data(&dr2);
-                select = 0xff;
                 puts("-------------------------------------");
                 break;
             case 3:

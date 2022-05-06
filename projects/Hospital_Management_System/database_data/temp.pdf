@@ -1,30 +1,28 @@
 {
-	Name: "ali Ali",
+	Name: "Ali Ali",
 	Gender: "male",
-	Specialization: "embedded systems en",
-	National id: 1122,
-	Hospital id: 424895769,
-	Phone: 0123,
-	Salary: 115.300
-	Consultancy fees: 15.230
+	Wanted specialization: "bones",
+	National id: 11,
+	Paid fees: 101.520,
+	Phone: 014,
+	Insurance: Y
+	Age: 12
+	Symptoms: "i am ok",
+	Report: "Not determined",
+	Medicine: "Not determined",
+	Follow up visit: "Not determined"
 }
 {
-	Name: "Nermeen Omar",
+	Name: "Mona Adel",
 	Gender: "female",
-	Specialization: "eyes",
-	National id: 456,
-	Hospital id: 926289225,
-	Phone: 015,
-	Salary: 55.630
-	Consultancy fees: 22.700
-}
-{
-	Name: "Ahmed Yasser",
-	Gender: "male",
-	Specialization: "dentistry",
-	National id: 887,
-	Hospital id: 8462281,
-	Phone: 016,
-	Salary: 5000.500
-	Consultancy fees: 150.000
+	Wanted specialization: "stomach",
+	National id: 4455,
+	Paid fees: 142.500,
+	Phone: 014,
+	Insurance: N
+	Age: 11
+	Symptoms: "Has a stomach ach",
+	Report: "After examination, I found out that she is ok",
+	Medicine: "Not determined",
+	Follow up visit: "Not determined"
 }

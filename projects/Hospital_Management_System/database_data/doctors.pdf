@@ -1,30 +1,30 @@
 {
-	Name: "ali Ali",
+	Name: "Mohamed Yasser",
 	Gender: "male",
-	Specialization: "embedded systems en",
-	National id: 1122,
-	Hospital id: 424895769,
-	Phone: 0123,
-	Salary: 115.300
-	Consultancy fees: 15.230
-}
-{
-	Name: "Nermeen Omar",
-	Gender: "female",
-	Specialization: "eyes",
-	National id: 456,
-	Hospital id: 926289225,
-	Phone: 015,
-	Salary: 55.630
-	Consultancy fees: 22.700
+	Specialization: "dentistry",
+	National id: 123,
+	Hospital id: 10916416,
+	Phone: 011,
+	Salary: 1100.230
+	Consultancy fees: 100.000
 }
 {
 	Name: "Ahmed Yasser",
 	Gender: "male",
-	Specialization: "dentistry",
-	National id: 887,
-	Hospital id: 8462281,
-	Phone: 016,
-	Salary: 5000.500
-	Consultancy fees: 150.000
+	Specialization: "eyes",
+	National id: 456,
+	Hospital id: 15225604,
+	Phone: 012,
+	Salary: 1001.300
+	Consultancy fees: 95.500
+}
+{
+	Name: "Nermeen omar",
+	Gender: "female",
+	Specialization: "bones",
+	National id: 789,
+	Hospital id: 20593444,
+	Phone: 013,
+	Salary: 1123.600
+	Consultancy fees: 12.669
 }
