@@ -11,9 +11,6 @@ function gets patient's data
 */
 static void patient_get_data(PATIENT* d);
 
-
-
-
 /******************************************************************************/
 
 

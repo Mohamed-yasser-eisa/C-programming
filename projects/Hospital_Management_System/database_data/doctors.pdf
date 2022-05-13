@@ -1,30 +1,20 @@
 {
 	Name: "Mohamed Yasser",
 	Gender: "male",
-	Specialization: "dentistry",
+	Specialization: "eyes",
 	National id: 123,
-	Hospital id: 10916416,
-	Phone: 011,
-	Salary: 1100.230
+	Hospital id: 1019844225,
+	Phone: 0112236365,
+	Salary: 1023.530
 	Consultancy fees: 100.000
 }
 {
-	Name: "Ahmed Yasser",
+	Name: "Omar Ibrahim",
 	Gender: "male",
-	Specialization: "eyes",
+	Specialization: "dentist",
 	National id: 456,
-	Hospital id: 15225604,
-	Phone: 012,
-	Salary: 1001.300
-	Consultancy fees: 95.500
-}
-{
-	Name: "Nermeen omar",
-	Gender: "female",
-	Specialization: "bones",
-	National id: 789,
-	Hospital id: 20593444,
-	Phone: 013,
-	Salary: 1123.600
-	Consultancy fees: 12.669
+	Hospital id: 1036582416,
+	Phone: 01144775586,
+	Salary: 10000.000
+	Consultancy fees: 50.000
 }

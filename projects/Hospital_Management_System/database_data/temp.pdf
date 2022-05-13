@@ -1,28 +1,28 @@
 {
-	Name: "Ali Ali",
+	Name: "Adel Mostafa",
 	Gender: "male",
 	Wanted specialization: "bones",
-	National id: 11,
-	Paid fees: 101.520,
-	Phone: 014,
+	National id: 45699873,
+	Paid fees: 150.000,
+	Phone: 0123654879,
 	Insurance: Y
-	Age: 12
-	Symptoms: "i am ok",
-	Report: "Not determined",
+	Age: 23
+	Symptoms: "Has a pain in his foot",
+	Report: "the patient need to has an operation",
 	Medicine: "Not determined",
 	Follow up visit: "Not determined"
 }
 {
-	Name: "Mona Adel",
+	Name: "Nermeen Mohamed",
 	Gender: "female",
-	Wanted specialization: "stomach",
-	National id: 4455,
-	Paid fees: 142.500,
-	Phone: 014,
-	Insurance: N
-	Age: 11
-	Symptoms: "Has a stomach ach",
-	Report: "After examination, I found out that she is ok",
+	Wanted specialization: "dentistry",
+	National id: 445566,
+	Paid fees: 445.630,
+	Phone: 0123654789,
+	Insurance: Y
+	Age: 17
+	Symptoms: "she has a tooth ach",
+	Report: "Not determined",
 	Medicine: "Not determined",
 	Follow up visit: "Not determined"
 }

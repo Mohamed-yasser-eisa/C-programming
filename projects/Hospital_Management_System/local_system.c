@@ -54,7 +54,8 @@ void change_theme(void)
     puts("(2) Background: blue.\tText: white.");
     puts("(3) Background: white.\tText: black.");
     puts("(4) Background: white.\tText: purple.");
-    puts("(5) Background: gray.\tText: black.\n");
+    puts("(5) Background: gray.\tText: black.");
+    puts("(6) Background: black.\tText: white.\n");
     puts("-------------------------------------");
 
     fflush(stdin);
@@ -66,31 +67,37 @@ void change_theme(void)
             puts("Theme now is: (green and white)");
             puts("Press any key to return main menu.\n");
             getch();
-            break;
+        break;
         case 2:
             system("color 9F"); //set theme to blue:white
             puts("Theme now is: (blue and white)");
             puts("Press any key to return main menu.\n");
             getch();
-            break;
+        break;
         case 3:
             system("color F0"); //set theme to white:black
             puts("Theme now is: (white and black)");
             puts("Press any key to return main menu.\n");
             getch();
-            break;
+        break;
         case 4:
             system("color FD"); //set theme to white:purple
             puts("Theme now is: (white and purple)");
             puts("Press any key to return main menu.\n");
             getch();
-            break;
+        break;
         case 5:
             system("color 80"); //set theme to gray:black
             puts("Theme now is: (gray and black)");
             puts("Press any key to return main menu.\n");
             getch();
-            break;
+        break;
+        case 6:
+            system("color 0F"); //set theme to gray:black
+            puts("Theme now is: (black and white)");
+            puts("Press any key to return main menu.\n");
+            getch();
+        break;
     }
 }
 

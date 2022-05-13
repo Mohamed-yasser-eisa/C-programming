@@ -29,7 +29,7 @@ int main()
     uint8 password_check = 0xFF;
 
     //uint8 dr_follow_up = 0xff;
-    system("COLOR 2F"); //set theme to: (Background: green, Text: white);
+    system("COLOR 0F"); //set theme to: (Background: green, Text: white);
 
     while(exit_program) //loop until exit_program = 0;
     {
@@ -172,12 +172,12 @@ int main()
                 change_theme();
                 break;
             case 6:
-                exit_program = 1;
+                exit_program = 0;
                 break;
             default:
                 puts("\n--> Invalid choice!");
                 puts("--> Time out...\n");
-                exit_program = 1; //terminate while() and close the program.
+                exit_program = 0; //terminate while() and close the program.
         }// end of switch(select);
 
     } //end of while(exit_program);
