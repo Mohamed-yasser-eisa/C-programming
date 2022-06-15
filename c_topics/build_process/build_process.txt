@@ -1,0 +1,10 @@
+Build process:
+
+    1- Preprocessor:
+
+            - In this process compiler uses the "Preprocessor" toolchain.
+            - In this process compiler removes any comments, and remove any command starts with '#'.
+            - The output of this process in a pure source code file, with no '#'.
+            - To include a header file from compiler directory use: <file.h>
+            - To include a header file from current directory use: "file.h"
+            - To include a header file from a file in the current directory use: "file//file.h"
